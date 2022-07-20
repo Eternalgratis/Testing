@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# AWESOMEBOOKSES6
+# Testing Todo-List
 This project allows organize your schedule with the add and remove features and it is built while working in the official guidelines of webpack. Webpack is a simple yet powerful boilerplate.
 
 ## Live Demo
@@ -27,6 +27,7 @@ Step 2: Copy All Project files and run using VSCODE. HTML can be viewed in brows
 - CSS (Cascading Style Sheets)
 - Javascript
 - Modules
+- Webpack
 
 
 ## Authors

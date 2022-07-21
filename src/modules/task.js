@@ -2,7 +2,6 @@
  * @jest-environment jsdom
  */
 
-
 class TodoList {
   constructor() {
     this.taskArr = [];

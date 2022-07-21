@@ -1,6 +1,11 @@
+/**
+ * @jest-environment jsdom
+ */
+
+
 class TodoList {
   constructor() {
-    this.taskArr = JSON.parse(localStorage.getItem('taskstore')) || [];
+    this.taskArr = [];
   }
 
     addTask = (item) => {

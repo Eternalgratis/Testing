@@ -1,5 +1,5 @@
 TN:
-SF:src\modules\calculator.js
+SF:src\test-exercice\calculator.js
 FN:2,(anonymous_0)
 FN:6,(anonymous_1)
 FN:10,(anonymous_2)
@@ -22,7 +22,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\modules\capitalize.js
+SF:src\test-exercice\capitalize.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:1
@@ -39,7 +39,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:src\modules\reverse.js
+SF:src\test-exercice\reverse.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:1
@@ -52,7 +52,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src\modules\testing.js
+SF:src\test-exercice\testing.js
 FN:1,(anonymous_0)
 FNF:1
 FNH:1

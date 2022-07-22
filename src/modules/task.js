@@ -27,8 +27,8 @@ class TodoList {
       });
     }
 
-    updateDescription = (index, newDescription) => {      
-      this.taskArr[index-1].description = newDescription;
+    updateDescription = (index, newDescription) => {
+      this.taskArr[index - 1].description = newDescription;
     }
 
    displayTask = () => {
@@ -51,12 +51,12 @@ class TodoList {
 
      const editDescription = document.querySelectorAll('.edit');
      editDescription.forEach((input) => {
-      input.addEventListener('change', (event) => {
-        const id = parseInt(event.target.dataset.index, 10);
-        const newDescription = event.target.value;
-        this.updateDescription(id,newDescription);
-        this.populateLocalStorage();
-      });
+       input.addEventListener('change', (event) => {
+         const id = parseInt(event.target.dataset.index, 10);
+         const newDescription = event.target.value;
+         this.updateDescription(id, newDescription);
+         this.populateLocalStorage();
+       });
      });
 
      const deleteBtn = document.querySelectorAll('.fa-trash-can');

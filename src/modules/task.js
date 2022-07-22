@@ -27,6 +27,10 @@ class TodoList {
       });
     }
 
+    updateDescription = (index, newDescription) => {
+      this.taskArr[index - 1].description = newDescription;
+    }
+
    displayTask = () => {
      const todo = document.querySelector('.todo-input ');
      todo.innerHTML = '';
@@ -35,7 +39,7 @@ class TodoList {
           <div class="todo-div">
           <div class="todos">
           <input type="checkbox" name="" id="${i}">
-          <p contenteditable=>${this.taskArr[i].description}</p>
+          <input type="text" data-index='${this.taskArr[i].index}' class="edit" value="${this.taskArr[i].description}">
           </div>
           <div class="icons">
           <i class="fa-solid fa-ellipsis-vertical" id='elipsi'></i>
@@ -44,6 +48,17 @@ class TodoList {
           </div>
           `;
      }
+
+     const editDescription = document.querySelectorAll('.edit');
+     editDescription.forEach((input) => {
+       input.addEventListener('change', (event) => {
+         const id = parseInt(event.target.dataset.index, 10);
+         const newDescription = event.target.value;
+         this.updateDescription(id, newDescription);
+         this.populateLocalStorage();
+       });
+     });
+
      const deleteBtn = document.querySelectorAll('.fa-trash-can');
      deleteBtn.forEach((button) => {
        button.addEventListener('click', (event) => {

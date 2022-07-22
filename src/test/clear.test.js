@@ -13,7 +13,7 @@
      taskstore.taskArr = [
          {
            description: 'wash the dishes',
-           completed: false,
+           completed: true,
            index: 1,
          },
          {
@@ -28,8 +28,8 @@
          }
        ];
      taskstore.displayTask();
-     taskstore.markCompleted(0);
-     expect(taskstore.taskArr[0].completed).toBeTruthy;
-     expect(taskstore.taskArr[2].completed).toBeFalsy;
+
+     cleartodos(taskstore);
+     expect(taskstore.taskArr).toHaveLength(2);
    });
  });
